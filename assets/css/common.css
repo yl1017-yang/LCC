@@ -1,66 +1,11 @@
 @charset "utf-8";
 
-/* fonts */
 /* @font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-Thin.woff2") format("woff2"), url("../../assets/fonts/Pretendard-Thin.woff") format("woff"), url("../../assets/fonts/Pretendard-Thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-}  
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-ExtraLight.woff2") format("woff2"), url("../../assets/fonts/Pretendard-ExtraLight.woff") format("woff"), url("../../assets/fonts/Pretendard-ExtraLight.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}  
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-Light.woff2") format("woff2"), url("../../assets/fonts/Pretendard-Light.woff") format("woff"), url("../../assets/fonts/Pretendard-Light.ttf") format("truetype");
-    font-weight: 350;
-    font-style: normal;
-}  
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-Regular.woff2") format("woff2"), url("../../assets/fonts/Pretendard-Regular.woff") format("woff"), url("../../assets/fonts/Pretendard-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}  
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-Medium.woff2") format("woff2"), url("../../assets/fonts/Pretendard-Medium.woff") format("woff"), url("../../assets/fonts/Pretendard-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Pretendard-SemiBold.woff") format("woff"), url("../../assets/fonts/Pretendard-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-Bold.woff2") format("woff2"), url("../../assets/fonts/Pretendard-Bold.woff") format("woff"), url("../../assets/fonts/Pretendard-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/Pretendard-ExtraBold.woff") format("woff"), url("../../assets/fonts/Pretendard-ExtraBold.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Pretendard';
-    src: url("../../assets/fonts/Pretendard-Black.woff2") format("woff2"), url("../../assets/fonts/Pretendard-Black.woff") format("woff"), url("../../assets/fonts/Pretendard-Black.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-} */
-@font-face {
 	font-family: 'Pretendard';
 	font-weight: 900;
 	font-display: swap;
 	src: local('Pretendard Black'), url(../../assets/fonts/Pretendard-Black.woff2) format('woff2'), url(../../assets/fonts/Pretendard-Black.woff) format('woff');
-}
+} */
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 800;
@@ -97,7 +42,7 @@
 	font-display: swap;
 	src: local('Pretendard Light'), url(../../assets/fonts/Pretendard-Light.woff2) format('woff2'), url(../../assets/fonts/Pretendard-Light.woff) format('woff');
 }
-@font-face {
+/* @font-face {
 	font-family: 'Pretendard';
 	font-weight: 200;
 	font-display: swap;
@@ -108,12 +53,12 @@
 	font-weight: 100;
 	font-display: swap;
 	src: local('Pretendard Thin'), url(../../assets/fonts/Pretendard-Thin.woff2) format('woff2'), url(../../assets/fonts/Pretendard-Thin.woff) format('woff');
-}
+} */
 
 /* reset */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;} /* vertical-align:baseline; */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-body{font-family:"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;font-size:100%;font-weight:400;color:var(--gray555);line-height:1.5;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;text-size-adjust:none;}
+body{font-family:"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;font-size:100%;font-weight:400;color:var(--gray333);line-height:1.5;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;text-size-adjust:none;}
 
 /* basic tags selector */
 img{max-width:100%;height:auto;vertical-align:middle;}
@@ -174,9 +119,9 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
 /* 폰트칼라 */
 :root {
   /* color */
-  --primary:#BE1622;
-  --secondary:#38384F;
-  --gray222:#222;
+  --primary:#79bfbf;
+  --secondary:#e06126;
+  --gray333:#333;
   --gray555:#555;
   --gray999:#999;
   --grayddd:#ddd;
@@ -185,23 +130,31 @@ input[type='text']:focus:-ms-input-placeholder{visibility:hidden}
   --white:#fff;
   --black:#000;
 
-  /* font size */
+  /* font size - 18px 기준 */
   --size6:0.333rem;
   --size8:0.444rem;
   --size10:0.556rem;
   --size12:0.667rem;
+  --size13:0.722rem;
   --size14:0.778rem;
   --size15:0.833rem;
   --size16:0.889rem;
+  --size17:0.944rem;
   --size18:1rem;
+  --size19:1.056rem;
   --size20:1.111rem;
+  --size21:1.167rem;
   --size22:1.222rem;
+  --size23:1.278rem;
   --size24:1.333rem;
+  --size25:1.389rem;
   --size26:1.444rem;
   --size28:1.556rem;
   --size30:1.667rem;
   --size32:1.778rem;
+  --size33:1.833rem;
   --size34:1.889rem;
+  --size35:1.944rem;
   --size36:2rem;
   --size38:2.111rem;
   --size40:2.222rem;

@@ -3,7 +3,7 @@
 html, body{-webkit-tap-highlight-color:transparent !important}
 .wrap{position:relative;}
 .container{position:relative;}
-.inner{width:1200px;margin:0 auto;}
+.inner{width:1196px;margin:0 auto;}
 
 /* 상단 */
 #header_wrap{position:fixed;top:0;left:0;width:100%;z-index:10;}
