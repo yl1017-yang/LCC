@@ -14,34 +14,42 @@ function gnbMenu(depth1, depth2, depth3) {
     // PC 네비
     var $gnb = $('.gnb');
     var $gnbDep1 = $('.gnbDep1', $gnb);
-    var $lnbDep1 = $(".lnb .lnbDep1 > li");
 
-    $gnb.on('focusin mouseenter',function(){    	
-        $(this).children().find('.gnbDep2').stop().slideDown('200');
-        $(this).parent().find('.gnbBg').stop().animate({ 'height':'260px' });        
-    });
+    // 전체메뉴 열기
+    // $gnb.on('focusin mouseenter',function(){
+    //     $(this).children().find('.gnbDep2').stop().slideDown('200');
+    //     $(this).parent().find('.gnbBg').stop().animate({ 'height':'260px' });
+    // });
+    // $gnb.on('focusout mouseleave',function(){
+    //     $(this).children('.gnbDep1').find('.gnbDep2').stop().slideUp('0');
+    //     $(this).parent().find('.gnbBg').stop().animate({ 'height':'0' });
+    // });
+    // $gnbDep1.hover(function(){
+    //     $(this).children('a').addClass('on');
+    // },function () {
+    //     $(this).children('a').removeClass('on');
+    //     $gnbDep1.eq(depth1-1).find('> a').addClass('on');
+    // });
 
-    $gnb.on('focusout mouseleave',function(){    	
-        $(this).children('.gnbDep1').find('.gnbDep2').stop().slideUp('0');
-        $(this).parent().find('.gnbBg').stop().animate({ 'height':'0' });        
-    });
-
-    $gnbDep1.hover(function(){
-        $(this).children('a').addClass('on');
-    },function () {
-        $(this).children('a').removeClass('on');
-        $gnbDep1.eq(depth1-1).find('> a').addClass('on');
+    // 개별메뉴 열기
+    $gnbDep1.find("> a").on('focusin mouseenter', function() {  
+      var parent = $(this).parent();    
+      parent.find(".gnbDep2").stop().slideDown();
+      $(this).addClass('on');
+      parent.siblings().find(".gnbDep2").css("display", "none");
+      parent.siblings().find("> a").removeClass('on');
+     });
+  
+    $(".gnb").on('focusout mouseleave', function() {
+      $(this).children('.gnbDep1').find('.gnbDep2').stop().slideUp("fast");
+      $(this).children('.gnbDep1').find("> a").removeClass('on');
+      $gnbDep1.eq(depth1).find("> a").addClass("on");    
     });
 
     //gnb - 페이지 인식
     if ($gnbDep1.length > depth1-1) {
       $gnbDep1.eq(depth1-1).find('> a').addClass('on');
       $gnbDep1.eq(depth1-1).find('.gnbDep2 > li').eq(depth2-1).find('> a').addClass('on');
-    }
-
-    //lnb - 페이지 인식
-    if ($lnbDep1.length > depth2-1) {
-      $lnbDep1.eq(depth2-1).find("a").addClass("on");
     }
 
 		// 모바일 전체 네비
