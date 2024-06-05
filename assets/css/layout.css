@@ -16,11 +16,12 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .header .util > a{display:flex;align-items:center;height:100%;margin:0 var(--size20);font-size:var(--size17);color:var(--gray999)}
 
 .gnb{display:flex;justify-content:center;position:relative;width:100%;z-index:20;}
-.gnb .gnbDep1{min-width:17%;}
+.gnb .gnbDep1{position:relative;min-width:17%;}
 .gnb .gnbDep1 > a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:var(--size25);font-weight:500;}
 .gnb .gnbDep1 > a.on{color:var(--primary);}
 
 .gnb .gnbDep2{display:none;background:var(--white);margin:0 !important;padding:14px 0;border:1px solid var(--gray222)}
+.gnb .gnbDep2::after{content:'';position:absolute;top:81px;left:65px;width:0;height:0;border-bottom:10px solid var(--gray222);border-left:8px solid transparent;border-right:8px solid transparent;}
 .gnb .gnbDep2 li > a{display:block;padding:4px 0;text-align:center;font-size:var(--size20);}
 .gnb .gnbDep2 li > a:hover,
 .gnb .gnbDep2 li > a.on{color:var(--primary);text-decoration:underline;}
@@ -68,41 +69,18 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 .mo_btn_close:after{content:'';display:block;position:absolute;width:30px;height:2px;left:27%;top:48%;opacity:1;background-color:var(--white);border-radius:10px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
 
 /* 하단 */
-#footer_wrap{width:100%;background:var(--gray222);margin-top:var(--size180);}
-.footer{position:relative;padding:var(--size60) 0}
-.footer .footer_info{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;font-size:var(--size16);color:var(--gray999);}
-.footer .footer_info:nth-of-type(2){border-top:1px solid var(--gray555);margin-top:var(--size40);padding-top:var(--size20);}
-.footer .footer_info address{color:var(--grayddd);line-height:1.8;}
-.footer .footer_info .text{color:var(--grayddd);font-size:var(--size60);font-weight:700;line-height:0.9;}
-.footer .footer_info .text p:nth-of-type(2){font-size:var(--size100);}
-.footer .footer_info .menu a{position:relative;display:inline-block;padding-left:var(--size30);font-weight:500;}
+#footer_wrap{width:100%;margin:var(--size70) 0;}
+.footer{position:relative}
+.footer .footer_info{font-size:var(--size15);}
+.footer .footer_info:nth-of-type(1){border-top:2px solid var(--gray555);border-bottom:1px solid var(--grayddd);margin-top:var(--size40);padding:var(--size10);}
+.footer .footer_info .menu a{position:relative;display:inline-block;padding-right:var(--size30);}
 .footer .footer_info .menu a:hover{text-decoration:underline;}
+.footer .footer_info > address{line-height:1.8;padding:var(--size20) var(--size10);}
 
 /* 서브 */
 .sub_visual{position:relative;margin-top:100px;min-height:540px;background-position:50% var(--size140);background-size:cover;background-repeat:no-repeat;}
-.sub_visual h3{font-size:var(--size50);font-weight:700;color:var(--gray222);padding-top:var(--size70);line-height:1;}
-.sub_visual h4{font-size:var(--size160);font-weight:900;color:rgba(255,255,255,0.7);line-height:0.9;text-align:right;}
 
 .bg_visual_about{background-image:url('../../images/about/img_visual_about.jpg');}
-.bg_visual_business{background-image:url('../../images/business/img_visual_business.jpg');}
-.bg_visual_partners{background-image:url('../../images/partners/img_visual_partners.jpg');}
-
-/* 서브메뉴 */
-.lnb{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:1200px;background:rgba(56,56,79,0.7);border-radius:20px 20px 0 0;overflow:hidden;}
-.lnb ul{display:flex;justify-content:space-between;align-items:center;}
-.lnb ul li{width:100%;font-weight:500;}
-.lnb ul li a{display:flex;align-items:center;justify-content:center;position:relative;width:100%;min-height:var(--size70);color:var(--white);line-height:1.2;text-align:center;}
-.lnb ul li a.on{background:var(--white);color:var(--gray222);}
-
-/* 타이틀 */
-.con_title{display:inline-block;position:relative;font-size:var(--size52);font-weight:700;color:var(--gray222);line-height:1.2;margin:var(--size120) 0 var(--size80);}
-.con_title span{color:var(--primary);}
-.con_title.mb40{margin-bottom:var(--size40)}
-.con_title_dep2{font-size:var(--size32);font-weight:500;color:var(--gray222);}
-
-/* 박스타입 */
-.box_type1{background:var(--secondary);border-radius:var(--size20);color:var(--white);padding:var(--size40);}
-.box_type1 .con_title_dep2{color:var(--white);}
 
 
 /********************* 반응형 ***********************/
@@ -125,9 +103,6 @@ html, body{-webkit-tap-highlight-color:transparent !important}
   .gnb .gnbDep1 > a {font-size:var(--size20);}
 
   .sub_visual{min-height:500px;}
-  .lnb{width:100%;border-radius:0;}
-
-  .con_title{font-size:var(--size40);}
 }
 
 @media screen and (max-width: 991.98px) {
@@ -135,11 +110,7 @@ html, body{-webkit-tap-highlight-color:transparent !important}
   .mo_btn_open{display:block;}
   .mo_gnb_wrap{width:100vw;}
   
-  .sub_visual h3{padding-top:var(--size50);}
-  .sub_visual h4{text-align:left;font-size:var(--size120);line-height:1.2;}  
 
-  .con_title_dep2{font-size:var(--size28);}
-  .con_title_dep2 br{display:none;}
 }
 
 @media screen and (max-width: 767.98px) {
@@ -155,23 +126,11 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 
   .sub_visual{min-height:380px;background-position:50% var(--size130);}
 
-  .con_title{font-size:var(--size30);margin:var(--size80) 0 var(--size40);}
-  .con_title.mb40{margin-bottom:var(--size20);}
-  .con_title br{display:none;}
-  .con_title_dep2{font-size:var(--size24);}
-
-  .lnb.lnb_row ul{flex-wrap:wrap;}
-  .lnb.lnb_row ul li{width:25%;}
-  .lnb.lnb_row ul li:nth-child(n+5){border-top:1px solid rgba(255,255,255,0.2);}
-  .lnb ul li a{min-height:var(--size60);letter-spacing:-1px;}
-
   #footer_wrap{margin-top:var(--size100);}
 }
 
 @media all and (max-width: 575.98px) {
   .sub_visual{min-height:280px;background-position:50% var(--size90);}
-  .sub_visual h3{font-size:var(--size40);padding-top:var(--size30);}
-  .sub_visual h4{text-align:left;font-size:var(--size80);}
 }
 
 @media all and (max-width: 478.98px) {
