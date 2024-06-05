@@ -31,15 +31,15 @@ html, body{-webkit-tap-highlight-color:transparent !important}
 /* body.fixed{overflow:hidden;} 모바일 오픈시 스크롤바 삭제 */
 /* .mo_gnb_bg{display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.3);z-index:0;} */
 .mo_gnb_wrap{display:none;position:fixed;top:0;right:0;width:500px;height:100vh;z-index:10;}
-.mo_gnb_wrap .scroll{position:absolute;top:0;right:-100px;width:100%;min-height:100vh;overflow-y:auto;background:var(--secondary);box-shadow:0 -10px 10px rgb(0 0 0 / 20%);} /* right:애니메이션, width:전체화면 */
+.mo_gnb_wrap .scroll{position:absolute;top:0;right:-100px;width:100%;min-height:100vh;overflow-y:auto;background:var(--primary);box-shadow:0 -10px 10px rgb(0 0 0 / 20%);} /* right:애니메이션, width:전체화면 */
 
 .mo_gnb_wrap .mo_gnb .depth1, .mo_gnb_wrap .mo_gnb .depth2{display:none;}
 .mo_gnb_wrap .mo_gnb{position:absolute;top:100px;left:0;width:100%;height:auto;}
 .mo_gnb_wrap .mo_gnb .none:before, .mo_gnb_wrap .mo_gnb .none:after{display:none;}
-.mo_gnb_wrap .mo_gnb > li > a{display:block;padding:var(--size30) var(--size60) var(--size10);font-size:var(--size28);color:var(--grayddd);font-weight:700;}
-.mo_gnb_wrap .mo_gnb .depth1 > li > a{display:block;padding:var(--size10) var(--size10) var(--size10) var(--size60);color:var(--gray999);background:rgba(255,255,255,0.05);}
+.mo_gnb_wrap .mo_gnb > li > a{display:block;padding:var(--size30) var(--size60) var(--size10);font-size:var(--size28);color:var(--white);font-weight:700;}
+.mo_gnb_wrap .mo_gnb .depth1 > li > a{display:block;padding:var(--size10) var(--size10) var(--size10) var(--size60);color:var(--white);background:rgba(255,255,255,0.05);}
 .mo_gnb_wrap .mo_gnb .depth1 > li > a:hover{text-decoration:underline;}
-.mo_gnb_wrap .mo_gnb .depth2 > li > a{display:block;padding:10px 5px 10px 30px;color:var(--gray999);}
+.mo_gnb_wrap .mo_gnb .depth2 > li > a{display:block;padding:10px 5px 10px 30px;color:var(--white);}
 
 /* on 효과 */
 .mo_gnb_wrap .mo_gnb li{position:relative;}
