@@ -18,7 +18,7 @@
 .company_con2 .con_box1 .row{display:flex;justify-content:space-between;}
 .company_con2 .con_box1 h3{font-size:var(--size34);font-weight:700;margin:var(--size30) 0;}
 .company_con2 .con_box1 h3 span{color:#e06126;}
-.company_con2 .con_box1 ul li{font-weight:600;position:relative;padding:0 0.6rem;line-height:1.8;letter-spacing:-0.04rem;}
+.company_con2 .con_box1 ul li{font-weight:600;position:relative;padding:0 0.6rem;line-height:1.8;}
 .company_con2 .con_box1 ul li span{color:#79bfbf;}
 .company_con2 .con_box1 ul li:before{content:'';position:absolute;top:13px;left:0;width:4px;height:4px;background:#222;border-radius:100px;}
 .company_con2 .con_box1 figure{width:400px;}
@@ -26,13 +26,40 @@
 .company_con2 .con_box1 .row:nth-of-type(2){flex-direction:row-reverse;border-top:1px solid #ddd;padding-top:var(--size30);margin-top:var(--size30);text-align:right;}
 .company_con2 .con_box1 .row:nth-of-type(2) ul li::before{left:auto;right:0;}
 
-.company_con2 .con_box2{font-size:var(--size25);font-weight:700;color:#fff;text-align:center;margin-top:var(--size70);}
+.company_con2 .con_box2{position:relative;font-size:var(--size25);font-weight:700;color:#fff;text-align:center;margin-top:var(--size70);}
 
 /* cpst */
+.cpst_con1{margin-bottom:var(--size160);}
+.cpst_con1 .cpst_box1{text-align:center;}
+.cpst_con1 .cpst_box1 .txt1{font-size:var(--size80);font-weight:600;}
+.cpst_con1 .cpst_box1 .txt2{font-size:var(--size40);}
+.cpst_con1 .cpst_box1 .txt3{font-size:var(--size40);font-weight:700;margin-top:var(--size30);}
+.cpst_con1 .cpst_box1 .txt4{font-size:var(--size21);margin-bottom:var(--size70);}
 
+.cpst_con2{background:#eee;padding-top:var(--size80);}
+.cpst_con2 h3{font-size:var(--size70);font-weight:700;text-align:center;}
+.cpst_con2 .cpst_box2{display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:var(--size120);}
+.cpst_con2 .cpst_box2 li{width:48%;text-align:center;border:3px solid #bbc6ff;border-radius:0.6rem;margin-bottom:var(--size150);}
+.cpst_con2 .cpst_box2 li > figure{display:flex;justify-content:center;align-content:center;flex-wrap:wrap;width:200px;height:200px;background:#fff;border-radius:200px;margin:-6rem auto 0;}
+.cpst_con2 .cpst_box2 li > p{font-size:var(--size21);padding:var(--size40) var(--size40) var(--size50);line-height:1.7;}
+.cpst_con2 .cpst_box2 li > p strong{display:block;font-size:var(--size34);font-weight:700;margin-bottom:var(--size20);}
+
+.cpst_con2 .cpst_box2 li:nth-child(even){background:#fff;border:0;box-shadow:0.2rem 0.5rem 1rem rgba(0,0,0,0.2);}
+.cpst_con2 .cpst_box2 li:nth-child(even)  > figure{background:#5971ee;}
 
 /* Power Think */
+.think_con1{margin-bottom:var(--size130);}
 
+.think_con2{background:#eee;padding:var(--size80) 0 var(--size20);}
+.think_con2 h3{font-size:var(--size70);font-weight:700;text-align:center;margin-bottom:var(--size60);}
+.think_con2 .think_card{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.think_con2 .think_card li{text-align:center;width:100%;background:#fff;margin-bottom:var(--size50);padding:var(--size50);font-size:var(--size28);border-radius:1rem;box-shadow:0.2rem 0.5rem 1rem rgba(0,0,0,0.2);}
+.think_con2 .think_card li > h4{color:#c4004f;font-weight:600;margin-bottom:var(--size8);}
+.think_con2 .think_card li > h4 span{color:#0068b3;}
+
+.think_con3{background:#d1d1d1;padding:var(--size60) 0;}
+.think_con3 ul{display:flex;justify-content:space-between;flex-wrap:wrap;}
+.think_con3 ul li{width:32%;}
 
 /* program */
 .program_con1 > .program_title{font-size:var(--size50);font-weight:700;color:#cf6116;text-align:center;margin-bottom:var(--size70);}
@@ -40,7 +67,7 @@
 .program_con2 > .program_title span{color:#c4004f;}
 .program_con2 .program_box{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .program_con2 .program_box li{width:47%;text-align:center;margin-bottom:var(--size100);}
-.program_con2 .program_box li h3{display:inline-block;background:#e9a49c;border-radius:2rem 2rem 0 0;padding:var(--size16);font-size:var(--size25);font-weight:700;letter-spacing:-0.04rem;}
+.program_con2 .program_box li h3{display:inline-block;background:#e9a49c;border-radius:2rem 2rem 0 0;padding:var(--size16);font-size:var(--size25);font-weight:700;}
 .program_con2 .program_box li p{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;height:100%;border:3px solid #e9a49c;background:#fdf9f5;border-radius:2rem;font-size:var(--size26);padding:var(--size50) 0 var(--size20);margin-top:-2rem;}
 
 .program_con2 .program_box li:nth-child(even) h3{background:#9bd3d9}
@@ -64,6 +91,12 @@
   .company_con2 .con_box1 ul li{font-size:var(--size15);line-height:1.6;}
   .company_con2 .con_box1 ul li:before{top:9px;}
   .company_con2 .con_box1 figure{width:330px;}
+
+  /* cpst */
+  .cpst_con1 .cpst_box1 .txt1{font-size:var(--size60);}
+  .cpst_con1 .cpst_box1 .txt2{font-size:var(--size30);}
+  .cpst_con1 .cpst_box1 .txt3{font-size:var(--size30);}
+  .cpst_con1 .cpst_box1 .txt4{font-size:var(--size18);}
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -100,7 +133,15 @@
 
   /* program */
   .program_con2 .program_box li{width:100%;}
-  .program_con2 .program_box li p{font-size:var(--size22);}
+  .program_con2 .program_box li p{font-size:var(--size20);}
+
+  /* cpst */
+  .cpst_con2 h3{font-size:var(--size50);}
+  .cpst_con2 .cpst_box2 li > figure{width:130px;height:130px;}
+  .cpst_con2 .cpst_box2 li > p{padding:var(--size30);}
+
+  /* Power Think */
+  .think_con2 h3{font-size:var(--size50);margin-bottom:var(--size30);}
 }
 
 @media all and (max-width: 575.98px) {
@@ -110,6 +151,22 @@
   /* company */
   .company_con2{padding:var(--size60) 0 var(--size40);}
   .company_con2 .con_box1 figure{width:60%;margin-top:var(--size10);}
+
+  /* cpst */
+  .cpst_con1{margin-bottom:var(--size100);}
+  .cpst_con1 .cpst_box1 .txt1{font-size:var(--size30);}
+  .cpst_con1 .cpst_box1 .txt2{font-size:var(--size22);}
+  .cpst_con1 .cpst_box1 .txt3{font-size:var(--size26);margin-top:var(--size10);}
+  .cpst_con1 .cpst_box1 .txt4{font-size:var(--size15);}
+
+  .cpst_con2 .cpst_box2 li{width:100%;}
+  .cpst_con2 .cpst_box2 li > figure img{width:30%;}
+  .cpst_con2 .cpst_box2 li > p{font-size:var(--size18);line-height:1.5;}
+  .cpst_con2 .cpst_box2 li > p strong{font-size:var(--size30);margin-bottom:0;}
+
+  /* Power Think */
+  .think_con2 .think_card li{margin-bottom:var(--size30);padding:var(--size30);font-size:var(--size20);}
+  .think_con3 ul li{width:100%;margin-bottom:var(--size20);}
 
   /* program */
   .program_con1 > .program_title{font-size:var(--size32);margin-bottom:var(--size30);}

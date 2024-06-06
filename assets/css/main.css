@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 /* 메인 비주얼 */
-.main_visual{position:relative;width:100%;height:100vh;}
-.main_visual .main_visual_img{position:relative;width:100%;height:100%;overflow:hidden;}
-.main_visual .main_visual_img img{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);min-width:1920px;height:100%;}
+.main_visual{position:relative;width:100%;}
+.main_visual .main_visual_img{position:relative;width:100%;}
 
 /* 소개 */
 .main_intro{padding:var(--size100) 0;text-align:center;}
@@ -80,22 +79,27 @@
 }
 
 @media all and (max-width: 575.98px) {
+  .main_intro{padding:var(--size60) 0;}
+  .main_intro .con_title{font-size:var(--size26);}
   .main_intro .intro_card{display:flex;flex-wrap:wrap;justify-content:center;margin:var(--size30) 0 0;}
   .main_intro .intro_card li{width:68%;margin:0 0 var(--size30);}
 
   .main_program .con_title{font-size:var(--size32);margin-bottom:var(--size30);}
   .main_program{margin-bottom:var(--size80);}
 
+  .main_cpst .con_title{font-size:var(--size26);}
+  .main_cpst .cpst_card > h3{font-size:var(--size34);}
   .main_cpst .cpst_card > p{margin:var(--size10) 0 var(--size30);}
   .main_cpst .cpst_card > span{margin-bottom:var(--size20);}
   .main_cpst .cpst_card > a{position:relative;bottom:0;right:0;margin-top:var(--size20);}
 
   .main_think .con_title{font-size:var(--size50);margin-bottom:var(--size40);}
-  .main_think .think_card li{width:100%;margin-bottom:var(--size20);}
+  .main_think .think_card li{width:100%;padding:var(--size40);margin-bottom:var(--size20);font-size:var(--size20);}
 
-  .main_plan .con_title{padding:var(--size20) 0;}
-  .main_plan .plan_card1 li{width:100%;margin-bottom:var(--size20);padding:var(--size30);}
-  .main_plan .plan_card2{padding:var(--size30);margin-top:0;}
+  .main_plan{margin-top:0;}
+  .main_plan .con_title{padding:var(--size50) 0 0;}
+  .main_plan .plan_card1 li{width:100%;margin-bottom:var(--size20);padding:var(--size30);font-size:var(--size20);}
+  .main_plan .plan_card2{padding:var(--size30);margin-top:0;font-size:var(--size20);}
   .main_plan .plan_card2 br{display:inline-block;}
 }
 
