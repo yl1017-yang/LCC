@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="Description" content="LCC Preschool"/>
+    <meta name="Keywords" content="LCC Preschool, LCC 유치원 Group, CPST, Power Think"/>
+    <meta http-equiv="Author" content=""/>
+    <title>LCC Preschool</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script>
+        $(function() {
+            $("#header_wrap").load("../include/header.html", function() {
+                gnbMenu(4, 0);
+            });
+            $("#footer_wrap").load("../include/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <div id="header_wrap"></div>
+        <!-- //헤더 -->
+
+        <!-- 본문내용 -->
+        <main class="container">
+            <!-- 서브 비주얼 -->
+            <section class="sub_visual">
+                <div class="blind">서브비주얼 이미지</div>
+            </section>
+            <!-- //서브 비주얼 -->
+
+            <section class="content inner">
+                <h2 class="nav_title">
+                    <a href="#none">자료실</a>
+                    <a href="#none" class="on">갤러리</a>
+                </h2>
+                <h3 class="sub_title">
+                    <span>자료실</span>
+                </h3>
+                <div>
+                    자료실 내용 추가
+                </div>
+            </section>
+        </main>
+        <!-- //본문내용 -->
+
+        <!-- 푸터 -->
+        <div id="footer_wrap"></div>
+        <!-- //푸터 -->
+    </div>
+</body>
+</html>

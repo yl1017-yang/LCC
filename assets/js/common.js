@@ -1,27 +1,7 @@
-// 초기화
-// $(function() {
-// 	gnbMenu();
-// });
-function gnbMenu(depth1, depth2, depth3) {
+function gnbMenu(depth1, depth2) {
     // PC 네비
     var $gnb = $('.gnb');
     var $gnbDep1 = $('.gnbDep1', $gnb);
-
-    // 전체메뉴 열기
-    // $gnb.on('focusin mouseenter',function(){
-    //     $(this).children().find('.gnbDep2').stop().slideDown('200');
-    //     $(this).parent().find('.gnbBg').stop().animate({ 'height':'260px' });
-    // });
-    // $gnb.on('focusout mouseleave',function(){
-    //     $(this).children('.gnbDep1').find('.gnbDep2').stop().slideUp('0');
-    //     $(this).parent().find('.gnbBg').stop().animate({ 'height':'0' });
-    // });
-    // $gnbDep1.hover(function(){
-    //     $(this).children('a').addClass('on');
-    // },function () {
-    //     $(this).children('a').removeClass('on');
-    //     $gnbDep1.eq(depth1-1).find('> a').addClass('on');
-    // });
 
     // 개별메뉴 열기
     $gnbDep1.find("> a").on('focusin mouseenter', function() {  
@@ -35,7 +15,7 @@ function gnbMenu(depth1, depth2, depth3) {
     $(".gnb").on('focusout mouseleave', function() {
       $(this).children('.gnbDep1').find('.gnbDep2').stop().slideUp("fast");
       $(this).children('.gnbDep1').find("> a").removeClass('on');
-      $gnbDep1.eq(depth1).find("> a").addClass("on");    
+      $gnbDep1.eq(depth1-1).find("> a").addClass("on");
     });
 
     //gnb - 페이지 인식
@@ -56,22 +36,17 @@ function gnbMenu(depth1, depth2, depth3) {
     // $moGnbWrap.hide();
     $moBtnOpen.on('click', function(e) {
     		e.preventDefault();
-    		// $(this).hide();
-        //$('body').addClass('fixed');
         $moGnbWrap.fadeIn(200);
         $moGnbWrap.find('.scroll').stop().animate({right:0}, 300);        
         $moGnbBg.fadeIn();
-				// $('body').css({'height':$(window).height(), 'overflow':'hidden'});
     });
     
     $moBtnClose.on('click', function(e) {
     		e.preventDefault();
-        //$('body').removeClass('fixed');
     		$moBtnOpen.show();
         $moGnbWrap.fadeOut(200);
         $moGnbWrap.find('.scroll').stop().animate({right:-100}, 300);
         $moGnbBg.hide();
-        // $('body').css({'height':'auto', 'overflow':'auto'});
     });	
         
 		$moGnbBg.on('click', function(e) {

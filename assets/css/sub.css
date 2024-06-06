@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* 공통 */
+.sub_visual{position:relative;min-height:343px;background:url('../../images/sub/img_visual_sub.jpg') 50% 1000%/cover no-repeat;}
+.content{margin-top:var(--size80);}
+.nav_title{display:flex;background:#3f4343;margin-bottom:var(--size60);}
+.nav_title > a{display:block;width:100%;font-size:var(--size25);font-weight:700;color:#fff;text-align:center;padding:var(--size20) 0;}
+.nav_title > a.on{background:#a0d2d3;}
+.sub_title{font-size:var(--size25);font-weight:700;margin-bottom:var(--size70);border-top:6px solid #e4e4e4;}
+.sub_title span{display:block;width:42%;background:#e4e4e4;text-align:center;padding:var(--size18) 0;border-radius:0 0 2rem 2rem;}
+
+/* company */
+.overview_con1{position:relative;text-align:right;margin-bottom:var(--size120);}
+
+
+/* 회사비전 */
+
+
+
+
+/* 반응형 */
+@media all and (max-width: 1918.98px) {
+
+}
+
+@media all and (max-width: 1599.98px) {
+  
+}
+
+@media screen and (max-width: 1399.98px) {
+
+}
+
+@media screen and (max-width: 1199.98px) {
+  
+}
+
+@media screen and (max-width: 991.98px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+/* 모바일 */
+@media screen and (max-width: 767.98px) {
+  .sub_visual{min-height:243px;}
+}
+
+@media all and (max-width: 575.98px) {
+  .sub_visual{min-height:140px;}
+  .nav_title > a{font-size:var(--size18);padding:var(--size14) 0;}
+}
+
+@media all and (max-width: 478.98px) {
+
+}
+
+@media all and (max-width: 358.98px) {
+
+}
