@@ -83,7 +83,7 @@
   .main_intro .intro_card{display:flex;flex-wrap:wrap;justify-content:center;margin:var(--size30) 0 0;}
   .main_intro .intro_card li{width:68%;margin:0 0 var(--size30);}
 
-  .main_program .con_title{font-size:var(--size34);margin-bottom:var(--size30);}
+  .main_program .con_title{font-size:var(--size32);margin-bottom:var(--size30);}
   .main_program{margin-bottom:var(--size80);}
 
   .main_cpst .cpst_card > p{margin:var(--size10) 0 var(--size30);}

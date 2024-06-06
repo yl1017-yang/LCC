@@ -6,17 +6,45 @@
 .nav_title{display:flex;background:#3f4343;margin-bottom:var(--size60);}
 .nav_title > a{display:block;width:100%;font-size:var(--size25);font-weight:700;color:#fff;text-align:center;padding:var(--size20) 0;}
 .nav_title > a.on{background:#a0d2d3;}
-.sub_title{font-size:var(--size25);font-weight:700;margin-bottom:var(--size70);border-top:6px solid #e4e4e4;}
-.sub_title span{display:block;width:42%;background:#e4e4e4;text-align:center;padding:var(--size18) 0;border-radius:0 0 2rem 2rem;}
+.sub_title{margin-bottom:var(--size70);border-top:6px solid #e4e4e4;}
+.sub_title span{display:inline-block;width:42%;background:#e4e4e4;text-align:center;padding:var(--size18) 0;border-radius:0 0 2rem 2rem;font-size:var(--size25);font-weight:700;}
 
 /* company */
-.overview_con1{position:relative;text-align:right;margin-bottom:var(--size120);}
+.company_con1{position:relative;margin-bottom:var(--size140);}
+.company_con2{position:relative;background:#79bfbf;padding:var(--size160) 0 var(--size70);overflow:hidden;}
+.company_con2 .con_box1{position:relative;width:100%;background:#fff;padding:var(--size50) 20%;}
+.company_con2 .con_box1::before{content:'';position:absolute;top:0;left:0;width:100%;height:900px;background:url('../../images/sub/img_company02_01.jpg') top left no-repeat;}
+.company_con2 .con_box1::after{content:'';position:absolute;top:0;right:0;width:100%;height:900px;background:url('../../images/sub/img_company02_02.jpg') top right no-repeat;}
+.company_con2 .con_box1 .row{display:flex;justify-content:space-between;}
+.company_con2 .con_box1 h3{font-size:var(--size34);font-weight:700;margin:var(--size30) 0;}
+.company_con2 .con_box1 h3 span{color:#e06126;}
+.company_con2 .con_box1 ul li{font-weight:600;position:relative;padding:0 0.6rem;line-height:1.8;letter-spacing:-0.04rem;}
+.company_con2 .con_box1 ul li span{color:#79bfbf;}
+.company_con2 .con_box1 ul li:before{content:'';position:absolute;top:13px;left:0;width:4px;height:4px;background:#222;border-radius:100px;}
+.company_con2 .con_box1 figure{width:400px;}
+
+.company_con2 .con_box1 .row:nth-of-type(2){flex-direction:row-reverse;border-top:1px solid #ddd;padding-top:var(--size30);margin-top:var(--size30);text-align:right;}
+.company_con2 .con_box1 .row:nth-of-type(2) ul li::before{left:auto;right:0;}
+
+.company_con2 .con_box2{font-size:var(--size25);font-weight:700;color:#fff;text-align:center;margin-top:var(--size70);}
+
+/* cpst */
 
 
-/* 회사비전 */
+/* Power Think */
 
 
+/* program */
+.program_con1 > .program_title{font-size:var(--size50);font-weight:700;color:#cf6116;text-align:center;margin-bottom:var(--size70);}
+.program_con2 > .program_title{font-size:var(--size70);font-weight:700;text-align:center;margin:var(--size120) 0 var(--size80);}
+.program_con2 > .program_title span{color:#c4004f;}
+.program_con2 .program_box{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.program_con2 .program_box li{width:47%;text-align:center;margin-bottom:var(--size100);}
+.program_con2 .program_box li h3{display:inline-block;background:#e9a49c;border-radius:2rem 2rem 0 0;padding:var(--size16);font-size:var(--size25);font-weight:700;letter-spacing:-0.04rem;}
+.program_con2 .program_box li p{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;height:100%;border:3px solid #e9a49c;background:#fdf9f5;border-radius:2rem;font-size:var(--size26);padding:var(--size50) 0 var(--size20);margin-top:-2rem;}
 
+.program_con2 .program_box li:nth-child(even) h3{background:#9bd3d9}
+.program_con2 .program_box li:nth-child(even) p{border:3px solid #9bd3d9;}
 
 /* 반응형 */
 @media all and (max-width: 1918.98px) {
@@ -28,29 +56,64 @@
 }
 
 @media screen and (max-width: 1399.98px) {
-
+  /* company */
+  .company_con2 .con_box1{padding:var(--size30) 18%;}
+  .company_con2 .con_box1::before,
+  .company_con2 .con_box1::after{background-size:15%;}
+  .company_con2 .con_box1 h3{margin:0 0 var(--size10);font-size:var(--size26);}
+  .company_con2 .con_box1 ul li{font-size:var(--size15);line-height:1.6;}
+  .company_con2 .con_box1 ul li:before{top:9px;}
+  .company_con2 .con_box1 figure{width:330px;}
 }
 
 @media screen and (max-width: 1199.98px) {
-  
+  /* company */
+  .company_con2 .con_box1 figure{width:260px;}
 }
 
 @media screen and (max-width: 991.98px) {
+  /* program */
+  .program_con2 > .program_title{font-size:var(--size50);margin:var(--size100) 0 var(--size40);}
+  .program_con2 .program_box li{width:49%;margin-bottom:var(--size60);}
 
 }
 
 @media screen and (max-width: 900px) {
-
+  /* company */
+  .company_con2 .con_box1 figure{width:180px;}
 }
 
 /* 모바일 */
 @media screen and (max-width: 767.98px) {
+  /* company */
   .sub_visual{min-height:243px;}
+  .sub_title span{width:auto;padding:var(--size14) var(--size34);font-size:var(--size20);}
+
+  .company_con1{margin-bottom:var(--size100);}
+  .company_con2{padding:var(--size100) 0 var(--size40);}
+  .company_con2 .con_box1 .row{display:block;}
+  .company_con2 .con_box1 figure{width:50%;margin-top:var(--size20);}
+  .company_con2 .con_box1 .row:nth-of-type(2){flex-direction:row;text-align:left;}
+  .company_con2 .con_box1 .row:nth-of-type(2) ul li::before{left:0;right:0;}
+  .company_con2 .con_box1 h3{font-size:var(--size20);}
+  .company_con2 .con_box2{font-size:var(--size20);margin-top:var(--size30);}
+
+  /* program */
+  .program_con2 .program_box li{width:100%;}
+  .program_con2 .program_box li p{font-size:var(--size22);}
 }
 
 @media all and (max-width: 575.98px) {
   .sub_visual{min-height:140px;}
   .nav_title > a{font-size:var(--size18);padding:var(--size14) 0;}
+
+  /* company */
+  .company_con2{padding:var(--size60) 0 var(--size40);}
+  .company_con2 .con_box1 figure{width:60%;margin-top:var(--size10);}
+
+  /* program */
+  .program_con1 > .program_title{font-size:var(--size32);margin-bottom:var(--size30);}
+  .program_con2 > .program_title{font-size:var(--size38);}
 }
 
 @media all and (max-width: 478.98px) {
