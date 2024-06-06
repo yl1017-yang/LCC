@@ -42,9 +42,11 @@
 .main_think .think_card li > h3 span{color:#0068b3;}
 
 /* 성장 Plan */
-.main_plan{margin-top:var(--size110);background:#f3d346;}
+.main_plan{position:relative;margin-top:var(--size110);}
+.main_plan .main_plan_box{background:#f3d346;}
 .main_plan .con_title{font-size:var(--size34);font-weight:700;text-align:center;margin-bottom:var(--size20);}
-.main_plan .inner{padding:var(--size70) var(--size20);}
+.main_plan .inner{position:relative;padding:var(--size70) var(--size20);overflow:hidden;}
+.main_plan .inner::after{content:'';position:absolute;background:url('../../images/main/img_main_plan02.png') no-repeat;width:254px;height:408px;top:242px;right:-90px;}
 .main_plan .plan_card1{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .main_plan .plan_card1 li{display:flex;flex-wrap:wrap;align-items:center;width:32%;background:#fff;font-size:var(--size25);text-align:center;border-radius:1rem;padding:var(--size50);}
 .main_plan .plan_card2{background:#fff;font-size:var(--size25);border-radius:1rem;padding:var(--size50) var(--size70);margin-top:var(--size30);}
@@ -65,11 +67,11 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-
+  .main_plan .inner::after{right:-100px;}
 }
 
 @media screen and (max-width: 991.98px) {
-
+  .main_plan .inner::after{right:-150px;}
 }
 
 /* 모바일 */
@@ -93,11 +95,12 @@
   .main_cpst .cpst_card > span{margin-bottom:var(--size20);}
   .main_cpst .cpst_card > a{position:relative;bottom:0;right:0;margin-top:var(--size20);}
 
-  .main_think .con_title{font-size:var(--size50);margin-bottom:var(--size40);}
+  .main_think{padding:var(--size60) 0;}
+  .main_think .con_title{font-size:var(--size40);margin-bottom:var(--size20);}
   .main_think .think_card li{width:100%;padding:var(--size40);margin-bottom:var(--size20);font-size:var(--size20);}
 
-  .main_plan{margin-top:0;}
-  .main_plan .con_title{padding:var(--size50) 0 0;}
+  .main_plan{margin-top:var(--size60);}
+  .main_plan .inner::after{display:none;}
   .main_plan .plan_card1 li{width:100%;margin-bottom:var(--size20);padding:var(--size30);font-size:var(--size20);}
   .main_plan .plan_card2{padding:var(--size30);margin-top:0;font-size:var(--size20);}
   .main_plan .plan_card2 br{display:inline-block;}
