@@ -29,8 +29,8 @@
 .main_cpst .cpst_card > h3{font-size:var(--size50);font-weight:800;color:#000;}
 .main_cpst .cpst_card > p{font-size:var(--size22);font-weight:700;color:#000;margin:var(--size20) 0 var(--size60);}
 .main_cpst .cpst_card > span{display:block;margin-bottom:var(--size30);}
-.main_cpst .cpst_card > ul li{position:relative;padding:0.2rem 0;}
-.main_cpst .cpst_card > ul li:before{content:'ㆍ';display:inline-block;}
+.main_cpst .cpst_card > ul li{position:relative;padding:0.2rem 0 0 0.6rem;}
+.main_cpst .cpst_card > ul li:before{content:'';position:absolute;top:12px;left:0;width:3px;height:3px;background:#222;border-radius:100px;}
 .main_cpst .cpst_card > a{position:absolute;bottom:var(--size50);right:var(--size100);display:inline-block;padding:0.4rem 3rem;}
 .main_cpst .cpst_card > a::before{content:'';position:absolute;background:url('../../images/main/icon_view.jpg') no-repeat;width:100px;height:50px;top:0.4rem;left:1rem;}
 
@@ -45,7 +45,7 @@
 /* 성장 Plan */
 .main_plan{margin-top:var(--size110);background:#f3d346;}
 .main_plan .con_title{font-size:var(--size34);font-weight:700;text-align:center;margin-bottom:var(--size20);}
-.main_plan .inner{padding:var(--size70) 0;}
+.main_plan .inner{padding:var(--size70) var(--size20);}
 .main_plan .plan_card1{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .main_plan .plan_card1 li{display:flex;flex-wrap:wrap;align-items:center;width:32%;background:#fff;font-size:var(--size25);text-align:center;border-radius:1rem;padding:var(--size50);}
 .main_plan .plan_card2{background:#fff;font-size:var(--size25);border-radius:1rem;padding:var(--size50) var(--size70);margin-top:var(--size30);}
@@ -75,11 +75,28 @@
 
 /* 모바일 */
 @media screen and (max-width: 767.98px) {
-
+  .main_cpst .cpst_card{padding:var(--size30) var(--size40);}
+  .main_cpst .cpst_card > a{bottom:var(--size30);right:var(--size40);}
 }
 
 @media all and (max-width: 575.98px) {
+  .main_intro .intro_card{display:flex;flex-wrap:wrap;justify-content:center;margin:var(--size30) 0 0;}
+  .main_intro .intro_card li{width:68%;margin:0 0 var(--size30);}
 
+  .main_program .con_title{font-size:var(--size34);margin-bottom:var(--size30);}
+  .main_program{margin-bottom:var(--size80);}
+
+  .main_cpst .cpst_card > p{margin:var(--size10) 0 var(--size30);}
+  .main_cpst .cpst_card > span{margin-bottom:var(--size20);}
+  .main_cpst .cpst_card > a{position:relative;bottom:0;right:0;margin-top:var(--size20);}
+
+  .main_think .con_title{font-size:var(--size50);margin-bottom:var(--size40);}
+  .main_think .think_card li{width:100%;margin-bottom:var(--size20);}
+
+  .main_plan .con_title{padding:var(--size20) 0;}
+  .main_plan .plan_card1 li{width:100%;margin-bottom:var(--size20);padding:var(--size30);}
+  .main_plan .plan_card2{padding:var(--size30);margin-top:0;}
+  .main_plan .plan_card2 br{display:inline-block;}
 }
 
 @media all and (max-width: 478.98px) {
