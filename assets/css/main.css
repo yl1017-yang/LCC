@@ -3,6 +3,7 @@
 /* 메인 비주얼 */
 .main_visual{position:relative;width:100%;}
 .main_visual .main_visual_img{position:relative;width:100%;}
+.main_visual .main_visual_img img{width:100%;}
 
 /* 소개 */
 .main_intro{padding:var(--size100) 0;text-align:center;}
@@ -45,7 +46,8 @@
 .main_plan{position:relative;margin-top:var(--size110);}
 .main_plan .main_plan_box{background:#f3d346;}
 .main_plan .con_title{font-size:var(--size34);font-weight:700;text-align:center;margin-bottom:var(--size20);}
-.main_plan .inner{position:relative;padding:var(--size70) var(--size20);overflow:hidden;}
+.main_plan figure img{width:100%;}
+.main_plan .inner{position:relative;padding:var(--size70) var(--size20);}
 .main_plan .inner::after{content:'';position:absolute;background:url('../../images/main/img_main_plan02.png') no-repeat;width:254px;height:408px;top:242px;right:-90px;}
 .main_plan .plan_card1{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .main_plan .plan_card1 li{display:flex;flex-wrap:wrap;align-items:center;width:32%;background:#fff;font-size:var(--size25);text-align:center;border-radius:1rem;padding:var(--size50);}
@@ -64,6 +66,7 @@
 }
 
 @media screen and (max-width: 1399.98px) {
+  .main_plan .main_plan_box{overflow:hidden;}
 }
 
 @media screen and (max-width: 1199.98px) {
